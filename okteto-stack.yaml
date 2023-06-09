@@ -1,37 +1,12 @@
 services:
-
   drone-srcb:
-
     build: .
-
     environment:
-
-      BOT_TOKEN: $BOT_TOKEN
-
-      API_ID: $API_ID
-
-      API_HASH: $API_HASH
-
-      CHANNELS: $CHANNELS
-
-      ADMINS: $ADMINS
-
-      LOG_CHANNEL: $LOG_CHANNEL
-
-      DATABASE_NAME: $DATABASE_NAME
-
-      DATABASE_URI: $DATABASE_URI
-
-
-
-
-
+      ID: $ID  
+      HASH: $HASH  
+      BOT_TOKEN: $BOT_TOKEN 
     ports:
-
       - 8080
-
     resources:
-
       cpu: 1000m
-
       memory: 3Gi
